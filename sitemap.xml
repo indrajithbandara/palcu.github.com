@@ -1,11 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>http://palcu.github.com/hello-world.html</loc>
+        <lastmod>2012-05-01T23:02:34+03:00</lastmod>
+    </url>
+    <url>
         <loc>http://palcu.github.com/</loc>
-        <lastmod>2012-05-01T19:37:52+03:00</lastmod>
+        <lastmod>2012-05-01T23:02:34+03:00</lastmod>
     </url>
     <url>
         <loc>http://palcu.github.com/blog/archives/</loc>
-        <lastmod>2012-05-01T19:37:52+03:00</lastmod>
+        <lastmod>2012-05-01T23:02:34+03:00</lastmod>
     </url>
 </urlset>
