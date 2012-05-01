@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[Strings of code and thought]]></title>
   <link href="http://palcu.github.com/atom.xml" rel="self"/>
   <link href="http://palcu.github.com/"/>
-  <updated>2012-05-01T19:38:40+03:00</updated>
+  <updated>2012-05-01T19:57:23+03:00</updated>
   <id>http://palcu.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
-    
+    <name><![CDATA[Alex Palcuie]]></name>
+    <email><![CDATA[alex.palcuie@gmail.com]]></email>
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
