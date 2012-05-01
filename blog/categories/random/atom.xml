@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Strings of code and thoughts]]></title>
-  <link href="http://palcu.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: random | Strings of code and thoughts]]></title>
+  <link href="http://palcu.github.com/blog/categories/random/atom.xml" rel="self"/>
   <link href="http://palcu.github.com/"/>
   <updated>2012-05-02T02:17:04+03:00</updated>
   <id>http://palcu.github.com/</id>
