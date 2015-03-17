@@ -1,6 +1,5 @@
 # Site settings
 title: Palcu's Blog
-email: alex dot palcuie at gmail dot com
 description: >
   Strings of code and thoughts.
 baseurl: "" # the subpath of your site, e.g. /blog/
