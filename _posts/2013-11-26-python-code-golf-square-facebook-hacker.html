@@ -60,34 +60,34 @@ blogger_orig_url: http://palcu.blogspot.com/2013/11/python-code-golf-square-face
 <br />
 <br />This is the solution I would have coded in C++ if I would not know Python.
 <br />
-<div class="gistLoad" data-id="7665786" id="gist-7665786">
-    <br />Loading gist ....</div>
+<script src="https://gist.github.com/palcu/7665786.js"></script>
 <br />Now let's try to compress those lines with some beautiful Python syntax. Let's start first with the matrix conversion. We could use a <i>list comprehension</i> for each line of the matrix, and sum it with the builtin <i>sum</i> function.
 <br />
 <br />
+<script src="https://gist.github.com/palcu/7665786.js"></script>
 <div class="gistLoad" data-id="7666014" id="gist-7666014">Loading gist ....</div>
 <br />Remember that <i>m[-1]</i> means the last element of a list.
 <br />
 <br />Now, we could get the first line with a black cell by using the <i>filter</i> method and by leveraging the fact that an empty list can be viewed as <i>False</i> (Python is pretty logical).
 <br />
 <br />
-<div class="gistLoad" data-id="7666149" id="gist-7666149">Loading gist ....</div>
+<script src="https://gist.github.com/palcu/7666149.js"></script>
 <br />Those left and right indices could get some love. We could use <i>enumerate</i> to iterate over the list and get the index and the value in a list comprehension.
 <br />
 <br />
-<div class="gistLoad" data-id="7666276" id="gist-7666276">Loading gist ....</div>
+<script src="https://gist.github.com/palcu/7666276.js"></script>
 <br />Finally, here come slices, which I think it are the most concise and powerful feature in Python. <i>v[left : right]</i> means you will get a list only with the elements in between the left and right indexes.
 <br />
 <br />
-<div class="gistLoad" data-id="7666344" id="gist-7666344">Loading gist ....</div>
+<script src="https://gist.github.com/palcu/7666344.js"></script>
 <br />We could move the line that asserts that our number of black cells is a perfect square to our last testing statement because we do not care about speed and we have two lines that print <i>NO</i>. Finally, our readable code after phytonification looks smooth.
 <br />
 <br />
-<div class="gistLoad" data-id="7666501" id="gist-7666501">Loading gist ....</div>
+<script src="https://gist.github.com/palcu/7666501.js"></script>
 <br />What remains last is to <i>minify</i> the code. I managed to reduce it to 12 lines and 412 chars.
 <br />
 <br />
-<div class="gistLoad" data-id="7666521" id="gist-7666521">Loading gist ....</div>
+<script src="https://gist.github.com/palcu/7666521.js"></script>
 <br />If this article convinced you to switch to Python you can start learning at <a href="http://www.codecademy.com/tracks/python">Codecademy</a> where they have a nice introduction track. If you are a more visual person, Sebastian Thrun (the guy who is in charge of self-driving cars at Google) has an online course at <a href="https://www.udacity.com/course/cs101">Udacity</a>. Finally, if you are a 1337 hardcore geek, learn python <a href="http://learnpythonthehardway.org/">the hard way</a>.
 <br />
 <br />Edit: more Python elegance can be seen in the Facebook <a href="https://www.facebook.com/notes/facebook-hacker-cup/2014-qualification-round-solutions/775180192497884">official solutions</a>.
@@ -95,5 +95,5 @@ blogger_orig_url: http://palcu.blogspot.com/2013/11/python-code-golf-square-face
 <br />Edit 2: <a href="http://olariu.org/">Andrei Olariu</a> sent me a better version in 9 lines and 334 chars. I guess I'm still learning this sport :)
 <br />
 <br />
-<div class="gistLoad" data-id="7667885" id="gist-7667885">Loading gist ....</div>
+<script src="https://gist.github.com/andreiolariu/7667885.js"></script>
 <br />
