@@ -193,6 +193,18 @@
 /**
  * Posts
  */
+.post {
+  img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .tr-caption-container {
+    padding-bottom: 10px;
+    font-style: italic;
+  }
+}
+
 .post-header {
     margin-bottom: $spacing-unit;
 }
