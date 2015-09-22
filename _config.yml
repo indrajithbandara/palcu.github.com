@@ -1,10 +1,9 @@
 # Site settings
 title: Palcu's Blog
 description: >
-  Software engineer and geek student. I like algorithms, startups and guitars.
-  I am a voracious reader.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://palcu.github.io" # the base hostname & protocol for your site
+  Self-taught hacker. I like to code, break things and help other people.
+  I write and teach Python and I build user interfaces on the web in Javascript with React.
+url: "http://blog.palcu.ro"
 twitter_username: AlexPalcuie
 github_username:  palcu
 
@@ -17,3 +16,7 @@ markdown: kramdown
 # Pagination
 paginate: 7
 paginate_path: "/blog/page:num/"
+
+# Github pages feed
+gems:
+  - jekyll-feed
