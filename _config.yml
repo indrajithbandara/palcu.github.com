@@ -11,9 +11,6 @@ github_username:  palcu
 # For SEO reasons, this is the same structure as in Blogger
 permalink: "/:year/:month/:title.html"
 
-# Build settings
-markdown: kramdown
-
 # Pagination
 paginate: 7
 paginate_path: "/blog/page:num/"
@@ -21,3 +18,5 @@ paginate_path: "/blog/page:num/"
 # Github pages feed
 gems:
   - jekyll-feed
+  - jekyll-paginate
+  - jekyll-gist
