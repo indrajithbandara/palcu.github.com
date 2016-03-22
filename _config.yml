@@ -1,9 +1,7 @@
 # Site settings
 name: Palcu's Blog
 title: Palcu's Blog
-description: >
-  Self-taught hacker. I like to code, break things and help other people.
-  I write and teach Python and I build user interfaces on the web in Javascript with React.
+description: "I love solving meaningful problems using software and helping other people."
 url: "http://blog.palcu.ro"
 twitter_username: AlexPalcuie
 github_username:  palcu
