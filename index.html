@@ -3,9 +3,23 @@ layout: default
 ---
 
 <div class="home">
+  <h3>Last Articles <i><a href="/all">view all</a></i></h3>
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
+        {% assign foundImage = 0 %}
+        {% assign images = post.content | split:"<img " %}
+        {% for image in images %}
+          {% if image contains 'src' %}
+
+              {% if foundImage == 0 %}
+                  {% assign html = image | split:"/>" | first %}
+                  <img {{ html }} />
+                  {% assign foundImage = 1 %}
+              {% endif %}
+          {% endif %}
+        {% endfor %}
+
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         {% for tag in post.tags %}
           <code class="post-meta">{{ tag }}</code>
@@ -14,20 +28,9 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+
+        <i>{{ post.content | strip_html | truncate:300 }}</i>
       </li>
     {% endfor %}
   </ul>
-
-  <p>
-    <span class="page_number ">Page: {{ paginator.page }}/{{ paginator.total_pages }}</span>
-  </p>
-  <p>
-    {% if paginator.previous_page_path %}
-      <a href="{{ paginator.previous_page_path }}" class="next">Prev</a> /
-    {% endif %}
-
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-    {% endif %}
-  </p>
 </div>

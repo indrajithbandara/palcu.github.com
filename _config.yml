@@ -1,10 +1,9 @@
-# Site settings
-name: Palcu's Blog
-title: Palcu's Blog
-description: "I love solving meaningful problems using software and helping other people."
+name: Alex Palcuie's Blog
+description: "I solve meaningful problems using software and help other people."
+
 url: "http://blog.palcu.ro"
 twitter_username: AlexPalcuie
-github_username:  palcu
+github_username: palcu
 
 # For SEO reasons, this is the same structure as in Blogger
 permalink: "/:year/:month/:title.html"
@@ -13,7 +12,6 @@ permalink: "/:year/:month/:title.html"
 paginate: 7
 paginate_path: "/blog/page:num/"
 
-# Github pages feed
 gems:
   - jekyll-feed
   - jekyll-paginate

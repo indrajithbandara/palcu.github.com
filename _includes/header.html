@@ -2,8 +2,6 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
     <nav class="site-nav">
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -14,15 +12,26 @@
       </a>
 
       <div class="trigger">
+          <a class="page-link" href="/">Home</a>
         {% for page in site.pages %}
           {% if page.title %}
           <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
-          <a class="page-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
       </div>
     </nav>
 
   </div>
 
+  {% if page.url == "/" %}
+  <div class="profile">
+      <section id="wrapper">
+          <header id="header">
+              <img id="avatar" src="/assets/taran.jpg">
+              <h1>Alex Palcuie</h1>
+              {% include description.html %}
+          </header>
+      </section>
+  </div>
+  {% endif %}
 </header>
