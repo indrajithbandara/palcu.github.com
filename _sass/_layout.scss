@@ -2,30 +2,16 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
-}
-
 .site-nav {
-    float: right;
+    font-size: 80%;
     line-height: 56px;
+    float: right;
 
     .menu-icon {
         display: none;
@@ -40,52 +26,45 @@
             margin-left: 20px;
         }
     }
+}
 
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
+.profile {
+    #header {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 10px;
+        text-align: center;
+        position: relative;
+    }
 
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
+    #avatar {
+        display: inline-block;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        margin-bottom: $spacing-unit;
+    }
 
-            > svg {
-                width: 18px;
-                height: 15px;
+    h1 {
+        font-weight: 600;
+        letter-spacing: 1px;
+        font-size: 24px;
+        color: #222;
+    }
 
-                path {
-                    fill: $grey-color-dark;
-                }
+    .description {
+        text-align: left;
+        font-weight: 400;
+
+        a {
+            text-decoration: underline;
+
+            &:hover {
+                color: $text-color;
+                text-decoration: none;
             }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
         }
     }
 }
-
 
 
 /**
@@ -175,6 +154,18 @@
 
     > li {
         margin-bottom: $spacing-unit;
+        clear: both;
+    }
+
+    img {
+        float: right;
+        margin: 40px;
+        max-width: 240px;
+        height: auto;
+
+        @include media-query($on-palm) {
+            display: none;
+        }
     }
 }
 
@@ -188,6 +179,11 @@
     font-size: 24px;
 }
 
+.paginator {
+    float: right;
+    clear: both;
+    margin-top: 40px;
+}
 
 
 /**
@@ -243,6 +239,15 @@
 
         @include media-query($on-laptop) {
             font-size: 18px;
+        }
+    }
+
+    a {
+        text-decoration: underline;
+
+        &:hover {
+            color: $text-color;
+            text-decoration: none;
         }
     }
 }

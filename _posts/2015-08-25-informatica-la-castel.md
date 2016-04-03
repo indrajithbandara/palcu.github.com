@@ -3,6 +3,7 @@ layout: post
 title: Informatica la Castel (Computer Science at the Castle)
 date: 2015-08-26 23:12:00
 author: Alex Palcuie
+category: best
 tags:
 - romania
 - summer school
