@@ -178,6 +178,11 @@
         line-height: 38.4px;
         margin: 0;
         margin-bottom: 10px;
+
+        @include media-query($on-palm) {
+            float: none;
+            line-height: auto;
+        }
     }
 
     hr {
