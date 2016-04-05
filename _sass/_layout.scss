@@ -255,9 +255,17 @@
  */
 .tags {
     li {
-        display: inine;
+        display: inline;
         list-style-type: none;
         float: left;
+    }
+}
+
+.tags-page {
+    li {
+        display: inline;
+        list-style-type: none;
+        margin-right: 20px;
     }
 }
 
