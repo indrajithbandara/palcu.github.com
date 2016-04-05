@@ -4,7 +4,7 @@
     <p>I preach open source in education at <a href="http://www.rosedu.org">ROSEdu</a>. I also teach and <a href="http://techblog.rosedu.org/cdl-2015.html">organize</a> projects.</p>
     <p>Went to the <a href="/2010/04/olimpiada-nationala-de-informatica-oni.html">National</a> <a href="/2012/03/national-computer-science-olympiad-2012.html">Computer</a> <a href="/2013/03/oni-2012-olimpiada-nationala-de.html">Science</a> Olympiad and <a href="/2013/05/acadnet-leo-romania-conference-ubervu.html">Acadnet</a> National Computer Engineering Olympiad.</p>
 
-    <p id="read-more-button" onclick="expandDescription()"><a href="#">Read more...</a></</p>
+    <p id="read-more-button" onclick="expandDescription()"><a href="#">Read more...</a></p>
 
     <div id="more-description">
         <p>Computer Science student at the <a href="http://fmi.unibuc.ro">University of Bucharest.</a></p>
@@ -24,7 +24,7 @@
         event.preventDefault();
 
         var more_description = document.getElementById('more-description');
-        more_description.className = 'show';
+        more_description.className = 'show-description';
 
         var button = document.getElementById('read-more-button');
         button.style.display = 'none'
@@ -33,33 +33,3 @@
         description.className = '';
     }
 </script>
-
-<style>
-    #description.before-click:after {
-      position: absolute;
-      bottom: 0;
-      height: 80%;
-      width: 100%;
-      content: "";
-      background: linear-gradient(to top,
-         rgba(255,255,255, 0.5) 0%,
-         rgba(255,255,255, 0) 60%
-      );
-      pointer-events: none; /* so the text is still selectable */
-      margin-bottom: 40px; /* leave space for the button */
-    }
-
-    #more-description {
-        opacity: 0;
-        height: 0;
-    }
-
-    #more-description.show {
-        opacity: 1;
-        height: auto;
-        transition: opacity 0.8s ease-out;
-        -ms-transition: opacity 0.8s ease-out;
-        -moz-transition: opacity 0.8s ease-out;
-        -webkit-transition: opacity 0.8s ease-out;
-    }​
-</style>
