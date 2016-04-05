@@ -6,18 +6,7 @@ layout: page
   <h1>Toate postările în română:</h1>
   <ul class="post-list">
     {% for post in site.categories.romanian %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        {% for tag in post.tags %}
-          <code class="post-meta">{{ tag }}</code>
-        {% endfor %}
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-
-        {{ post.content | strip_html | truncate:400 }}
-      </li>
+      {% include list-article.html chars-max=400 %}
     {% endfor %}
   </ul>
 </div>
