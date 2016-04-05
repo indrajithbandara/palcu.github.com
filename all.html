@@ -6,7 +6,6 @@ layout: page
   <h1>All posts:</h1>
   <ul class="post-list">
     {% for post in site.posts %}
-      {{ post.categories | inspect }}
       {% include list-article.html chars-max=400 %}
     {% endfor %}
   </ul>

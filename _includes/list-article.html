@@ -3,7 +3,6 @@
   {% assign images = post.content | split:"<img " %}
   {% for image in images %}
     {% if image contains 'src' %}
-
         {% if foundImage == 0 %}
             {% assign html = image | split:"/>" | first %}
             {% assign tags = html | split:" " %}
@@ -30,5 +29,5 @@
   {% endif %}
   </h2>
 
-  {{ post.content | strip_html | truncate: include.chars-max }}
+  {{ post.content | markdownify | strip_html | truncate: include.chars-max }}
 </li>
