@@ -26,7 +26,11 @@ layout: default
         {% endfor %}
 
         <h2>
+        {% if post.custom_link %}
+          <a class="post-link" href="{{ post.custom_link }}">{{ post.title }}</a>
+        {% else %}
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        {% endif %}
         </h2>
 
         <i>{{ post.content | strip_html | truncate:140 }}</i>
