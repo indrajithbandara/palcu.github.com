@@ -1,16 +1,10 @@
 /**
  * Site header
  */
-.site-header {
-    min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
 
 .site-nav {
     font-size: 80%;
-    line-height: 56px;
+    line-height: 48px;
     float: right;
 
     .menu-icon {
@@ -59,6 +53,7 @@
             text-decoration: underline;
         }
     }
+    margin-bottom: $spacing-unit;
 }
 
 
@@ -135,9 +130,6 @@
 /**
  * Page content
  */
-.page-content {
-    padding: $spacing-unit 0;
-}
 
 .page-heading {
     font-size: 20px;
@@ -196,10 +188,6 @@
   }
 }
 
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
 .post-title {
     font-size: 42px;
     letter-spacing: -1px;
@@ -211,8 +199,6 @@
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
-
     h2 {
         font-size: 32px;
 
