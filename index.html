@@ -3,10 +3,10 @@ layout: default
 ---
 
 <div class="home">
-  <h1>Last Articles <i>
-      <a href="/all">view all</a> / <a href="/romanian">Romanian</a> / <a href="/english">English</a>
-    </i>
-  </h1>
+  <h2 class="inline">Last Articles </h2>
+  <p class="url">
+    <a href="/all">view all</a> / <a href="/romanian">Romanian</a> / <a href="/english">English</a>
+  </p>
   <ul class="post-list">
     {% for post in site.posts | limit: 3 %}
       {% unless post.categories contains 'best' %}
@@ -15,10 +15,11 @@ layout: default
     {% endfor %}
   </ul>
   <hr />
-  <h1>Last Best Articles <i>
-      <a href="/best">view all best articles</a>
-    </i>
-  </h1>
+  <h2 class="inline">Last Best Articles</h2>
+  <p class="url">
+    <a href="/best">view all best articles</a>
+  </p>
+
   <ul class="post-list">
     {% for post in site.categories.best | limit: 3 %}
       {% include list-article.html chars-max=140 %}

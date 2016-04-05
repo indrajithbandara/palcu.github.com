@@ -172,15 +172,19 @@
 }
 
 .home {
-    i {
+    .url {
         float: right;
-        font-size: 80%;
+        font-style: italic;
+        line-height: 38.4px;
+        margin: 0;
     }
 
     hr {
         margin-bottom: $spacing-unit / 2;
         margin-top: -5px;
-        border: 0.5px solid $grey-color-dark;
+        border-style: solid;
+        border-color: $grey-color-dark;
+        border-width: inherit;
     }
 }
 
@@ -258,3 +262,7 @@
 }
 
 .badge { background-color: #e6efc2; border-radius: 3.75em; color: #56651a; display: inline-block; font-size: 0.75em; font-weight: 600; line-height: 1; padding: 0.4em 1.2em; }
+
+.inline {
+    display: inline;
+}
