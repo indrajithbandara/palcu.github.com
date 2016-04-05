@@ -3,6 +3,8 @@ layout: post
 title: Application process for the Community Development Lab
 date: '2015-04-10T00:33:00.000+02:00'
 author: Alex Palcuie
+categories: best
+custom_link: http://techblog.rosedu.org/cdl-2015.html
 tags:
 - ROSEdu
 - algorithms
