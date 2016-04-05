@@ -1,61 +1,65 @@
-<div class="description-faded description" id="description">
-    <p>Computer Science student at <a href="http://fmi.unibuc.ro">University of Bucharest.</a></p>
+<div id="description" class="before-click">
     <p>Software engineer at the Romanian Government, where I'm technically responsible for <a href="https://data.gov.ro">data.gov.ro</a>, the national open data portal.</p>
     <p>Will join <a href="http://palantir.com/">Palantir</a> as a Forward Deployed Engineer next summer.</p>
-    <p>Born in Ramnicu-Valcea, Romania. Now I live in Bucharest and will move to London.</p>
     <p>I preach open source in education at <a href="http://www.rosedu.org">ROSEdu</a>. I also teach and <a href="http://techblog.rosedu.org/cdl-2015.html">organize</a> projects.</p>
-    <p>Participated in high-school at <a href="/2011/09/summer-holiday-2011-infoeducatie.html">InfoEducatie</a>, the most awesome <a href="/2015/08/infoeducatie-2015.html">programming</a> camp in the world.</p>
-    <div id="more-description">
     <p>Went to the <a href="/2010/04/olimpiada-nationala-de-informatica-oni.html">National</a> <a href="/2012/03/national-computer-science-olympiad-2012.html">Computer</a> <a href="/2013/03/oni-2012-olimpiada-nationala-de.html">Science</a> Olympiad and <a href="/2013/05/acadnet-leo-romania-conference-ubervu.html">Acadnet</a> National Computer Engineering Olympiad.</p>
-    <p>Started working after high-school at uberVU, a social media analytics startup. We got acquired by <a href="http://hootsuite.com/">Hootsuite</a>. I've learnt a lot there about software engineering.</p>
-    <p>I was a <a href="/2011/09/rojam-2011-national-romanian-scout.html">scout</a> and a <a href="/2012/10/leo-romania-friendship-camp.html">Leo</a>.</p>
-    <p>Avid reader. My <a href="https://getpocket.com/stats/2015/3d260aafbb">Pocket statistics</a> said I've read 92 books of articles last year and more real ones on <a href="https://www.goodreads.com/user/show/8940497-alex-palcuie">Goodreads</a>.</p>
-    <p>Played football for 5 years and basketball for 7 years. Now, I <a href="https://www.strava.com/athletes/3741856">run</a>, <a href="https://gyrosco.pe/palcu/sport/">swim</a> and <a href="https://www.fitocracy.com/profile/palcu/">lift</a>.</p>
-    <p>Professional procrastinator and world class sleeper.</p>
-    <p>Starting to blog daily...</p>
+
+    <p id="read-more-button" onclick="expandDescription()"><a href="#">Read more...</a></</p>
+
+    <div id="more-description">
+        <p>Computer Science student at the <a href="http://fmi.unibuc.ro">University of Bucharest.</a></p>
+        <p>Born in Ramnicu-Valcea, Romania. Now I live in Bucharest and will move to London.</p>
+        <p>Participated in high-school at <a href="/2011/09/summer-holiday-2011-infoeducatie.html">InfoEducatie</a>, the most awesome <a href="/2015/08/infoeducatie-2015.html">programming</a> camp in the world.</p>
+        <p>Started working after high-school at uberVU, a social media analytics startup. We got acquired by <a href="http://hootsuite.com/">Hootsuite</a>. I've learnt a lot there about software engineering.</p>
+        <p>I was a <a href="/2011/09/rojam-2011-national-romanian-scout.html">scout</a> and a <a href="/2012/10/leo-romania-friendship-camp.html">Leo</a>.</p>
+        <p>Avid reader. My <a href="https://getpocket.com/stats/2015/3d260aafbb">Pocket statistics</a> said I've read 92 books of articles last year and more real ones on <a href="https://www.goodreads.com/user/show/8940497-alex-palcuie">Goodreads</a>.</p>
+        <p>Played football for 5 years and basketball for 7 years. Now, I <a href="https://www.strava.com/athletes/3741856">run</a>, <a href="https://gyrosco.pe/palcu/sport/">swim</a> and <a href="https://www.fitocracy.com/profile/palcu/">lift</a>.</p>
+        <p>Professional procrastinator and world class sleeper.</p>
+        <p>Starting to blog daily...</p>
     </div>
 </div>
 
-<p id="read-more-trigger" onclick="fuck()">Read more</p>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
 <script>
-    function fuck() {
+    function expandDescription() {
+        event.preventDefault();
+
         var more_description = document.getElementById('more-description');
-        more_description.style.display = 'block';
-        var description_faded = document.getElementById('description');
-        description_faded.className = '';
-        var button = document.getElementById('read-more-trigger');
+        more_description.className = 'show';
+
+        var button = document.getElementById('read-more-button');
         button.style.display = 'none'
+
+        var description = document.getElementById('description');
+        description.className = '';
     }
 </script>
-<style>
-    #more-description {
-        display: none;
-    }
 
-    .description:after {
+<style>
+    #description.before-click:after {
       position: absolute;
       bottom: 0;
-      height: 100%;
+      height: 80%;
       width: 100%;
       content: "";
       background: linear-gradient(to top,
-         rgba(255,255,255, 1) 0%,
-         rgba(255,255,255, 0) 50%
+         rgba(255,255,255, 0.5) 0%,
+         rgba(255,255,255, 0) 60%
       );
       pointer-events: none; /* so the text is still selectable */
-      margin-bottom: 60px; /* leave space for the button */
+      margin-bottom: 40px; /* leave space for the button */
     }
 
-    #read-more-trigger {
-      cursor: pointer;
-      display: inline-block;
-      padding: 0 .5em;
-      color: #000;
-      font-size: .9em;
-      line-height: 2;
-      border: 1px solid #ddd;
-      border-radius: .25em;
+    #more-description {
+        opacity: 0;
+        height: 0;
     }
+
+    #more-description.show {
+        opacity: 1;
+        height: auto;
+        transition: opacity 0.8s ease-out;
+        -ms-transition: opacity 0.8s ease-out;
+        -moz-transition: opacity 0.8s ease-out;
+        -webkit-transition: opacity 0.8s ease-out;
+    }​
 </style>
