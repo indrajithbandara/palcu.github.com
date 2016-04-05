@@ -1,6 +1,7 @@
 <li>
   {% assign foundImage = 0 %}
   {% assign images = post.content | split:"<img " %}
+
   {% for image in images %}
     {% if image contains 'src' %}
         {% if foundImage == 0 %}
