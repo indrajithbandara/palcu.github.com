@@ -3,7 +3,10 @@ layout: default
 ---
 
 <div class="home">
-  <h3>Last Articles <i><a href="/all">view all</a></i></h3>
+  <h3>Last Articles <i>
+      <a href="/all">view all</a> / <a href="/romanian">Romanian</a> / <a href="/english">English</a>
+    </i>
+  </h3>
   <ul class="post-list">
     {% for post in paginator.posts %}
       <li>
