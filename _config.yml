@@ -17,6 +17,8 @@ social:
     - https://www.facebook.com/palcuiealex
     - https://www.linkedin.com/in/alexpalcuie
     - https://github.com/palcu
+facebook:
+  app_id: 202914823068704
 
 # For SEO reasons, this is the same structure as in Blogger
 permalink: "/:year/:month/:title.html"
