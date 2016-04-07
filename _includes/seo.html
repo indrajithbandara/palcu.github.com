@@ -5,9 +5,8 @@
 {% if page.seo_url %}
   {% assign seo_url = page.seo_url %}
 {% else %}
-  {% assign seo_url = site.url | prepend: seo_url %}
+  {% assign seo_url = page.url | prepend: site.url %}
 {% endif %}
-{% assign seo_url = seo_url %}
 
 
 {% assign seo_site_title = site.title | default: site.name %}
