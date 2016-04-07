@@ -141,6 +141,12 @@
     > li {
         margin-bottom: $spacing-unit;
         clear: both;
+
+        code {
+            margin-left: 5px;
+            margin-top: 5px;
+            display: inline-block;
+        }
     }
 
     img {
