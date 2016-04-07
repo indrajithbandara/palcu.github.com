@@ -74,11 +74,13 @@
 {% endif %}
 
 {% if site.logo %}
-    {% assign seo_site_logo = site.logo | prepend: seo_url | escape %}
+    {% assign seo_site_logo = site.logo | prepend: site.url | escape %}
 {% endif %}
 
 {% if page.image %}
-    {% assign seo_page_image = page.image | prepend: seo_url | escape %}
+    {% assign seo_page_image = page.image.src | prepend: site.url | escape %}
+{% else %}
+    {% assign seo_page_image = '/assets/glider.png' | prepend: site.url | escape %}
 {% endif %}
 
 {% if seo_tag.title and seo_title %}
