@@ -1,9 +1,22 @@
+# Theme settings
 name: Alex Palcuie's Blog
-description: "I solve meaningful problems using software and help other people."
-
 url: "http://blog.palcu.ro"
 twitter_username: AlexPalcuie
 github_username: palcu
+
+# SEO
+title: Alex Palcuie's Blog
+description: "I solve meaningful problems using software and help other people."
+google_site_verification: 1-bnMsg8ZPhhZ9zuL4v7412nngKzSpbJMxae_2TnRWg
+twitter:
+  username: AlexPalcuie
+social:
+  name: Alex Palcuie
+  links:
+    - https://twitter.com/alexpalcuie/
+    - https://www.facebook.com/palcuiealex
+    - https://www.linkedin.com/in/alexpalcuie
+    - https://github.com/palcu
 
 # For SEO reasons, this is the same structure as in Blogger
 permalink: "/:year/:month/:title.html"
@@ -18,4 +31,5 @@ gems:
   - jekyll-redirect-from
   - jekyll-paginate
   - jemoji
+  - jekyll-seo-tag
   - jekyll-sitemap
