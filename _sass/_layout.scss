@@ -146,6 +146,10 @@
             margin-left: 5px;
             margin-top: 5px;
             display: inline-block;
+
+            @include media-query($on-palm) {
+                display: none;
+            }
         }
     }
 
