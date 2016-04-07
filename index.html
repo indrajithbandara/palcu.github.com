@@ -10,7 +10,7 @@ layout: default
   <ul class="post-list">
     {% for post in site.posts | limit: 3 %}
       {% unless post.categories contains 'best' %}
-        {% include list-article.html chars-max=140 %}
+        {% include list-article.html chars-max=300 %}
       {% endunless %}
     {% endfor %}
   </ul>
@@ -22,7 +22,7 @@ layout: default
 
   <ul class="post-list">
     {% for post in site.categories.best | limit: 3 %}
-      {% include list-article.html chars-max=140 %}
+      {% include list-article.html chars-max=300 %}
     {% endfor %}
   </ul>
 </div>

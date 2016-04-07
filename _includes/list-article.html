@@ -38,5 +38,5 @@
   {% endif %}
   </h2>
 
-  {{ post.content | markdownify | strip_html | truncate: include.chars-max }}
+  {{ post.excerpt | markdownify | strip_html | truncate: include.chars-max }}
 </li>
