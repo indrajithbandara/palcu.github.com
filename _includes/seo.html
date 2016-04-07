@@ -53,7 +53,7 @@
 
 {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
 {% if seo_description %}
-  {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
+  {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once | truncate: 155 %}
 {% endif %}
 
 {% assign seo_author = page.author | default: page.authors[0] | default: site.author %}
