@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html>
+{% assign lang = 'en' %}
+{% if page.categories contains 'romanian' %}
+  {% assign lang = 'ro' %}
+{% endif %}
+<html lang="{{ lang }}">
 
   {% capture head %}
   {% include head.html %}
