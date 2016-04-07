@@ -6,9 +6,13 @@ author: Alex Palcuie
 categories: romanian best
 custom_link: http://gazeta.info.ro/informatica-la-castel/
 tags:
-- romania
-- summer school
-- open source
+  - romania
+  - summer school
+  - open source
+
+image:
+  src: "/assets/informatica-castel.jpg"
+  alt: "informatica la castel"
 ---
 
 This week I'm participating in Arad in a summer school called "Informatica la

@@ -1,21 +1,29 @@
 <li>
-  {% assign foundImage = 0 %}
-  {% assign images = post.content | split:"<img " %}
+  {% if post.image %}
 
-  {% for image in images %}
-    {% if image contains 'src' %}
-        {% if foundImage == 0 %}
-            {% assign html = image | split:"/>" | first %}
-            {% assign tags = html | split:" " %}
-            {% for tag in tags %}
-              {% if tag contains 'src' %}
-                <img {{ tag }} />
-              {% endif %}
-            {% endfor %}
-            {% assign foundImage = 1 %}
-        {% endif %}
-    {% endif %}
-  {% endfor %}
+    <img src="{{ post.image.src }}" alt="{{ post.image.alt }}" />
+
+  {% else %}
+
+    {% assign foundImage = 0 %}
+    {% assign images = post.content | split:"<img " %}
+
+    {% for image in images %}
+      {% if image contains 'src' %}
+          {% if foundImage == 0 %}
+              {% assign html = image | split:"/>" | first %}
+              {% assign tags = html | split:" " %}
+              {% for tag in tags %}
+                {% if tag contains 'src' %}
+                  <img {{ tag }} />
+                {% endif %}
+              {% endfor %}
+              {% assign foundImage = 1 %}
+          {% endif %}
+      {% endif %}
+    {% endfor %}
+
+  {% endif %}
 
   <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
   {% for tag in post.tags %}
