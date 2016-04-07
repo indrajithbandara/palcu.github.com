@@ -1,2 +1,3 @@
 User-Agent: *
 Disallow:
+Sitemap: https://blog.palcu.ro/sitemap.xml
