@@ -33,5 +33,4 @@ gems:
   - jekyll-redirect-from
   - jekyll-paginate
   - jemoji
-  - jekyll-seo-tag
   - jekyll-sitemap

@@ -4,7 +4,7 @@ title: Informatica la Castel (Computer Science at the Castle)
 date: 2015-08-26 23:12:00
 author: Alex Palcuie
 categories: romanian best
-custom_link: http://gazeta.info.ro/informatica-la-castel/
+seo_url: http://gazeta.info.ro/informatica-la-castel/
 tags:
   - romania
   - summer school
