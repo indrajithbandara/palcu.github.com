@@ -25,11 +25,7 @@ I have lots of stuff on [Github](http://github.com/palcu). The order here is pur
 * [KITss](https://github.com/palcu/KITss) - my first Rails app. It is a social network for alumni students.
 * [twoColumnQuestions](https://github.com/palcu/twoColumnQuestions) - my first SPA written w/ jQuery
 * [bsmusic](https://bitbucket.org/palcu/bsmusic) - Rails app that took Youtube videos and compiled a playlist
-* InfoEducatie [frontend](frontend) and [backend](backend) - Rebuilt the entire website in
-React w/ Rails
-
-[frontend]: https://github.com/infoeducatie/infoeducatie-ui
-[backend]: http://github.com/infoeducatie/infoeducatie-api
+* InfoEducatie [frontend](https://github.com/infoeducatie/infoeducatie-ui) and [backend](http://github.com/infoeducatie/infoeducatie-api) - Rebuilt the entire website in React w/ Rails
 
 ## Algorithms
 
