@@ -30,13 +30,13 @@
     <code class="post-meta"><a href="/tags#{{ tag | slugify }}-ref">{{ tag }}</a></code>
   {% endfor %}
 
-  <h2>
+  <h3>
   {% if post.seo_url %}
     <a class="post-link" href="{{ post.seo_url }}">{{ post.title }}</a>
   {% else %}
     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
   {% endif %}
-  </h2>
+  </h3>
 
   {{ post.excerpt | markdownify | strip_html | truncate: include.chars-max }}
 </li>
