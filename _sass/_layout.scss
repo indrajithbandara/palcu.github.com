@@ -73,6 +73,16 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+
+    @include media-query($on-palm) {
+        li {
+            display: none;
+
+            &.display-on-mobile {
+                display: block;
+            }
+        }
+    }
 }
 
 .footer-col-wrapper {
