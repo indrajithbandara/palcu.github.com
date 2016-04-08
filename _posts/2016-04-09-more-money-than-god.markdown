@@ -1,5 +1,6 @@
 ---
 title: Cronică la cartea "More Money Than God"
+date: "2016-04-09 00:48:40"
 layout: post
 categories: romanian
 tags:
