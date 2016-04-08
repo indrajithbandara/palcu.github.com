@@ -167,6 +167,8 @@
         float: right;
         margin: 0px 0 40px 40px;
         max-width: 300px;
+        max-height: 200px;
+        width: auto;
         height: auto;
 
         @include media-query($on-palm) {
