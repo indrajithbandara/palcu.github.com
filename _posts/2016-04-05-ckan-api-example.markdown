@@ -1,7 +1,7 @@
 ---
 title: CKAN API Example
 layout: post
-sitemap: none
+sitemap: false
 seo_url: "http://gov.palcu.ro/2016/04/05/ckan-api-example.html"
 tags: ckan gov
 ---
