@@ -8,5 +8,12 @@
 
   <link rel="shortcut icon" href="/assets/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}?cache={{ site.time | date: '%s' }}">
+
+  <style type="text/css">
+    {% capture include_to_scssify %}
+      {% include inline.scss %}
+    {% endcapture %}
+    {{ include_to_scssify | scssify }}
+  </style>
+
 </head>
