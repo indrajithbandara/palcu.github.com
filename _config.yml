@@ -24,10 +24,6 @@ facebook:
 # For SEO reasons, this is the same structure as in Blogger
 permalink: "/:year/:month/:title.html"
 
-# Pagination
-paginate: 7
-paginate_path: "/blog/page:num/"
-
 sass:
   style: compressed
 
