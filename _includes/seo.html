@@ -78,7 +78,7 @@
   <title>{{ seo_page_title }}</title>
 {% endif %}
 
-{% if seo_description %}
+{% if seo_description and page.no_description == null %}
   <meta name="description" content="{{ seo_description }}" />
   <meta property="og:description" content="{{ seo_description }}" />
 {% endif %}
@@ -150,7 +150,7 @@
     "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
 {% endif %}
 
-{% if seo_description %}
+{% if seo_description and page.no_description == null %}
     "description": {{ seo_description | jsonify }},
 {% endif %}
 

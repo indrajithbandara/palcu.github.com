@@ -2,6 +2,7 @@
 layout: page
 title: Open Source
 permalink: /open-source/
+no_description: true
 ---
 
 I have lots of stuff on [Github](http://github.com/palcu). The order here is purely random.

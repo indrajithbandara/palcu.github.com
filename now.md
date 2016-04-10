@@ -2,6 +2,7 @@
 layout: page
 title: Now
 permalink: /now/
+no_description: true
 ---
 
 What I am doing now:
