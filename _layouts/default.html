@@ -4,22 +4,15 @@
   {% assign lang = 'ro' %}
 {% endif %}
 <html lang="{{ lang }}">
-
-  {% capture head %}
   {% include head.html %}
-  {% endcapture %}{{ head | strip_newlines }}
 
   <body>
 
-    {% capture header %}
     {% include header.html %}
-    {% endcapture %}{{ header | strip_newlines }}
 
     <div class="page-content">
       <div class="wrapper">
-        {% capture header %}
         {{ content }}
-        {% endcapture %}{{ content | strip_newlines }}
       </div>
     </div>
 
