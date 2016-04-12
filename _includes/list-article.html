@@ -1,8 +1,14 @@
-<li>
+<li itemprop="BlogPosting" itemscope itemtype="http://schema.org/BlogPosting">
+  <div itemprop="author" itemscope itemtype="http://schema.org/Person" />
+    <meta content="{{ site.author }}" itemprop="name" />
+    <meta content="{{ site.my_face | prepend: site.url }}" itemprop="image" />
+  </div>
+
+  {% assign post_image = site.logo %}
+
   {% if post.image %}
-
     <img src="{{ post.image.src }}" alt="{{ post.image.alt }}" />
-
+    {% assign post_image = post.image.src %}
   {% else %}
 
     {% assign foundImage = 0 %}
@@ -16,27 +22,31 @@
               {% for tag in tags %}
                 {% if tag contains 'src' %}
                   <img {{ tag }} />
+                  {% assign post_image = tag %}
                 {% endif %}
               {% endfor %}
               {% assign foundImage = 1 %}
+          {% else %}
+            {% break %}
           {% endif %}
       {% endif %}
     {% endfor %}
 
   {% endif %}
 
-  <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <meta itemprop="image" content="{{ post_image | prepend: site.url }}" />
+
+  <span class="post-meta" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</span>
   {% for tag in post.tags %}
     <code class="post-meta"><a href="/tags#{{ tag | slugify }}-ref">{{ tag }}</a></code>
   {% endfor %}
 
-  <h3>
-  {% if post.seo_url %}
-    <a class="post-link" href="{{ post.seo_url }}">{{ post.title }}</a>
+  {% if post.custom_url %}
+    {% assign url = post.custom_url %}
   {% else %}
-    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    {% assign url = post.url %}
   {% endif %}
-  </h3>
+  <h3><a itemprop="name" class="post-link" href="{{ url }}"><span itemprop="headline">{{ post.title }}</span></a></h3>
 
-  {{ post.excerpt | markdownify | strip_html | truncate: include.chars-max }}
+  <span itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: include.chars-max }}</span>
 </li>

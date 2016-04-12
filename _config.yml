@@ -1,5 +1,4 @@
 # Theme settings
-name: "Alex Palcuie | Palcu's Blog"
 url: "https://blog.palcu.ro"
 twitter_username: AlexPalcuie
 github_username: palcu
@@ -21,6 +20,9 @@ social:
     - https://plus.google.com/+AlexPalcuie
 facebook:
   app_id: 202914823068704
+logo: '/assets/glider.png'
+my_face: /assets/alex_palcuie.png
+
 
 # For SEO reasons, this is the same structure as in Blogger
 permalink: "/:year/:month/:title.html"
