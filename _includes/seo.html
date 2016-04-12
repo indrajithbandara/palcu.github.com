@@ -1,5 +1,5 @@
 {% if page.url == "/" or page.url == "/about/" %}
-  {% assign seo_homepage_or_about = true %}
+  {% assign is_homepage = true %}
 {% endif %}
 
 
@@ -10,43 +10,17 @@
 {% endif %}
 
 
-{% assign seo_site_title = site.title | default: site.name %}
+{% assign site_title = site.title %}
+{% assign page_title = page.title | default: site_title %}
 
-{% if page.title %}
-  {% assign seo_title = page.title %}
-  {% assign seo_page_title = page.title %}
-
-  {% if seo_site_title %}
-    {% assign seo_title = seo_title | append:" - " | append: seo_site_title %}
-  {% endif %}
-{% elsif seo_site_title %}
-  {% assign seo_title = seo_site_title %}
-  {% assign seo_page_title = seo_site_title %}
-
-  {% if site.description %}
-    {% assign seo_title = seo_title | append:" - " | append: site.description %}
-  {% endif %}
-{% endif %}
-
-{% if page.seo and page.seo.name %}
-    {% assign seo_name = page.seo.name %}
-{% elsif seo_homepage_or_about and site.social and site.social.name %}
-    {% assign seo_name = site.social.name %}
-{% elsif seo_homepage_or_about and seo_site_title %}
-    {% assign seo_name = seo_site_title %}
-{% endif %}
-{% if seo_name %}
-  {% assign seo_name = seo_name | markdownify | strip_html | strip_newlines | escape_once %}
-{% endif %}
 
 {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
 {% if seo_description %}
   {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once | truncate: 155 %}
 {% endif %}
 
-{% if page.seo and page.seo.type %}
-    {% assign seo_type = page.seo.type %}
-{% elsif seo_homepage_or_about %}
+
+{% if is_homepage %}
     {% assign seo_type = "Blog" %}
 {% elsif page.date %}
     {% assign seo_type = "BlogPosting" %}
@@ -54,86 +28,62 @@
     {% assign seo_type = "WebPage" %}
 {% endif %}
 
-{% if page.seo and page.seo.links %}
-    {% assign seo_links = page.seo.links %}
-{% elsif seo_homepage_or_about and site.social and site.social.links %}
-    {% assign seo_links = site.social.links %}
-{% endif %}
 
 {% if page.image %}
-    {% assign seo_page_image = page.image.src | prepend: site.url | escape %}
+    {% assign page_image = page.image.src | prepend: site.url | escape %}
 {% else %}
-    {% assign seo_page_image = page.logo | prepend: site.url | escape %}
+    {% assign page_image = site.logo | prepend: site.url | escape %}
 {% endif %}
 
-{% if seo_tag.title and seo_title %}
-  <title>{{ seo_title }}</title>
-{% endif %}
 
-{% if seo_page_title %}
-  <meta property="og:title" content="{{ seo_page_title }}" />
-  <title>{{ seo_page_title }}</title>
-{% endif %}
+<title>{{ page_title }}</title>
+<meta property="og:title" content="{{ page_title }}" />
+<meta property="og:site_name" content="{{ site_title }}" />
 
-{% if seo_description and page.no_description == null %}
+{% if page.no_description == null %}
   <meta name="description" content="{{ seo_description }}" />
   <meta property="og:description" content="{{ seo_description }}" />
 {% endif %}
 
-{% if page_url %}
-  <link rel="canonical" href="{{ page_url }}" />
-  <meta property="og:url" content="{{ page_url }}" />
-{% endif %}
+<link rel="canonical" href="{{ page_url }}" />
+<meta property="og:url" content="{{ page_url }}" />
 
-{% if seo_site_title %}
-  <meta property="og:site_name" content="{{ seo_site_title }}" />
-{% endif %}
 
-{% if seo_page_image %}
-  <meta property="og:image" content="{{ seo_page_image }}" />
-{% endif %}
+<meta property="og:image" content="{{ page_image }}" />
+
 
 {% if page.date %}
   <meta property="og:type" content="article" />
   <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />
 {% endif %}
 
-{% if site.twitter %}
-  {% if seo_page_image %}
-    <meta name="twitter:card" content="summary_large_image" />
-  {% else %}
-    <meta name="twitter:card" content="summary" />
-  {% endif %}
 
-  <meta name="twitter:site" content="@AlexPalcuie" />
-  <meta name="twitter:creator" content="@AlexPalcuie" />
-{% endif %}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@AlexPalcuie" />
+<meta name="twitter:creator" content="@AlexPalcuie" />
 
-{% if site.facebook %}
-  {% if site.facebook.publisher %}
-    <meta property="article:publisher" content="{{ site.facebook.publisher }}" />
-  {% endif %}
+<meta property="article:publisher" content="{{ site.facebook.publisher }}" />
+<meta property="fb:app_id" content="{{ site.facebook.app_id }}" />
 
-  {% if site.facebook.app_id %}
-    <meta property="fb:app_id" content="{{ site.facebook.app_id }}" />
-  {% endif %}
-{% endif %}
+<meta name="google-site-verification" content="{{ site.google_site_verification }}" />
 
-{% if site.google_site_verification %}
-  <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
-{% endif %}
 
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": {{ seo_type | jsonify }},
-    "name": {{ seo_name | jsonify }},
-    "headline": {{ seo_page_title | jsonify }},
-    "image": {{ seo_page_image | jsonify }},
-{% if page.date %}"datePublished": {{ page.date | date_to_xmlschema | jsonify }},{% endif %}
-{% if seo_description and page.no_description == null %}
+    "name": {{ page_title | jsonify }},
+    "headline": {{ page_title | jsonify }},
+    "image": {{ page_image | jsonify }},
+
+  {% if page.date %}
+    "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+  {% endif %}
+
+  {% if seo_description and page.no_description == null %}
     "description": {{ seo_description | jsonify }},
-{% endif %}
+  {% endif %}
+
     "url": {{ page_url | jsonify }},
     "author": {
       "@type": "Person",
@@ -141,7 +91,7 @@
       "image": {{ page.my_face | prepend: site.url | jsonify }},
       "jobTitle": "Software Engineer",
       "nationality": "Romania",
-      "sameAs": {{ seo_links | jsonify }}
+      "sameAs": {{ site.social.links | jsonify }}
     }
   }
 </script>
