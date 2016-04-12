@@ -59,10 +59,6 @@
     {% assign seo_links = site.social.links %}
 {% endif %}
 
-{% if site.logo %}
-    {% assign seo_site_logo = site.logo | prepend: site.url | escape %}
-{% endif %}
-
 {% if page.image %}
     {% assign seo_page_image = page.image.src | prepend: site.url | escape %}
 {% else %}
@@ -136,9 +132,6 @@
 {% if page.date %}"datePublished": {{ page.date | date_to_xmlschema | jsonify }},{% endif %}
 {% if seo_description and page.no_description == null %}
     "description": {{ seo_description | jsonify }},
-{% endif %}
-{% if seo_site_logo %}
-    "logo": {{ seo_site_logo | jsonify }},
 {% endif %}
     "sameAs": {{ seo_links | jsonify }},
     "url": {{ seo_url | jsonify }}
