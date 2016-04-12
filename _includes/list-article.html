@@ -1,10 +1,8 @@
 <li itemprop="BlogPosting" itemscope itemtype="http://schema.org/BlogPosting">
-  <meta itemprop="author" content="Alex Palcuie" />
-  <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Palcu's Blog" />
-    <meta itemprop="logo" content="{{ site.logo | prepend: site.url }}" />
+  <div itemprop="author" itemscope itemtype="http://schema.org/Person" />
+    <meta content="Alex Palcuie" itemprop="name" />
+    <meta content="{{ site.my_face | prepend: site.url }}" itemprop="image" />
   </div>
-  <meta itemprop="dateModified" content="{{ post.date }}">
 
   {% assign post_image = site.logo %}
 
@@ -46,16 +44,9 @@
   {% if post.custom_url %}
     {% assign url = post.custom_url %}
   {% else %}
-    {% assign url = post.url | prepend: site.url %}
+    {% assign url = post.url %}
   {% endif %}
-  <h3>
-    <a itemprop="mainEntityOfPage" class="post-link" href="{{ url }}">{{ post.title }}</a>
-  </h3>
+  <h3><a itemprop="name" class="post-link" href="{{ url }}"><span itemprop="headline">{{ post.title }}</span></a></h3>
 
-  {% assign content = post.excerpt | markdownify | strip_html %}
-  <span itemprop="description">
-    {{ content | truncate: include.chars-max }}
-  </span>
-
-  <meta itemprop="headline" content="{{ content | truncate: 110 }}" />
+  <span itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: include.chars-max }}</span>
 </li>

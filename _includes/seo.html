@@ -88,7 +88,7 @@
     "author": {
       "@type": "Person",
       "name": "Alex Palcuie",
-      "image": {{ page.my_face | prepend: site.url | jsonify }},
+      "image": {{ site.my_face | prepend: site.url | jsonify }},
       "jobTitle": "Software Engineer",
       "nationality": "Romania",
       "sameAs": {{ site.social.links | jsonify }}
