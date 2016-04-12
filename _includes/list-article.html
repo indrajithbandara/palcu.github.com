@@ -28,6 +28,8 @@
                 {% endif %}
               {% endfor %}
               {% assign foundImage = 1 %}
+          {% else %}
+            {% break %}
           {% endif %}
       {% endif %}
     {% endfor %}
