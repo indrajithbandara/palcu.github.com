@@ -11,7 +11,7 @@
 
 
 {% assign site_title = site.title %}
-{% assign page_title = page.title | default: site_title %}
+{% assign page_title = page.title | default: site_title | markdownify | strip_html | strip_newlines | escape_once %}
 
 
 {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
