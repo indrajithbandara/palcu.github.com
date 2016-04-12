@@ -4,9 +4,9 @@
 
 
 {% if page.custom_url %}
-  {% assign custom_url = page.custom_url %}
+  {% assign page_url = page.custom_url %}
 {% else %}
-  {% assign custom_url = page.url | prepend: site.url %}
+  {% assign page_url = page.url | prepend: site.url %}
 {% endif %}
 
 
@@ -80,9 +80,9 @@
   <meta property="og:description" content="{{ seo_description }}" />
 {% endif %}
 
-{% if custom_url %}
-  <link rel="canonical" href="{{ custom_url }}" />
-  <meta property="og:url" content="{{ custom_url }}" />
+{% if page_url %}
+  <link rel="canonical" href="{{ page_url }}" />
+  <meta property="og:url" content="{{ page_url }}" />
 {% endif %}
 
 {% if seo_site_title %}
@@ -134,7 +134,7 @@
 {% if seo_description and page.no_description == null %}
     "description": {{ seo_description | jsonify }},
 {% endif %}
-    "url": {{ custom_url | jsonify }},
+    "url": {{ page_url | jsonify }},
     "author": {
       "@type": "Person",
       "name": "Alex Palcuie",
