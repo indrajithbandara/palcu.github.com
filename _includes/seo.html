@@ -46,7 +46,7 @@
 {% if page.seo and page.seo.type %}
     {% assign seo_type = page.seo.type %}
 {% elsif seo_homepage_or_about %}
-    {% assign seo_type = "WebSite" %}
+    {% assign seo_type = "Blog" %}
 {% elsif page.date %}
     {% assign seo_type = "BlogPosting" %}
 {% else %}
@@ -133,7 +133,14 @@
 {% if seo_description and page.no_description == null %}
     "description": {{ seo_description | jsonify }},
 {% endif %}
-    "sameAs": {{ seo_links | jsonify }},
-    "url": {{ seo_url | jsonify }}
+    "url": {{ seo_url | jsonify }},
+    "author": {
+      "@type": "Person",
+      "name": "Alex Palcuie",
+      "image": "https://blog.palcu.ro/assets/alex_palcuie.png",
+      "jobTitle": "Software Engineer",
+      "nationality": "Romania",
+      "sameAs": {{ seo_links | jsonify }}
+    }
   }
 </script>
