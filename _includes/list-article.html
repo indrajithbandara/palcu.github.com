@@ -43,8 +43,8 @@
     <code class="post-meta"><a href="/tags#{{ tag | slugify }}-ref">{{ tag }}</a></code>
   {% endfor %}
 
-  {% if post.seo_url %}
-    {% assign url = post.seo_url %}
+  {% if post.custom_url %}
+    {% assign url = post.custom_url %}
   {% else %}
     {% assign url = post.url | prepend: site.url %}
   {% endif %}

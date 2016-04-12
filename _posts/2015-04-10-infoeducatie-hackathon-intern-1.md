@@ -4,7 +4,7 @@ title: InfoEducație Hackathon Intern 1
 date: '2015-04-10T00:34:00.000+02:00'
 author: Alex Palcuie
 categories: romanian
-seo_url: http://blog.infoeducatie.ro/stiri/2015/04/07/hackathon-intern-1.html
+custom_url: http://blog.infoeducatie.ro/stiri/2015/04/07/hackathon-intern-1.html
 tags:
 - InfoEducatie
 - hackathon
