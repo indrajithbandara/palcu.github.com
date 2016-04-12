@@ -6,7 +6,7 @@
           <a class="page-link" href="/">Home</a>
           {% for page in site.pages %}
             {% if page.title %}
-            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            <a class="page-link" href="{{ page.url | prepend: site.url }}">{{ page.title }}</a>
             {% endif %}
           {% endfor %}
       </div>

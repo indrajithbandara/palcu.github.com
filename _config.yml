@@ -21,6 +21,9 @@ social:
     - https://plus.google.com/+AlexPalcuie
 facebook:
   app_id: 202914823068704
+logo: '/assets/glider.png'
+my_face: /assets/alex_palcuie.png
+
 
 # For SEO reasons, this is the same structure as in Blogger
 permalink: "/:year/:month/:title.html"
