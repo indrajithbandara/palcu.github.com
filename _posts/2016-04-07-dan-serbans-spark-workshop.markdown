@@ -6,7 +6,8 @@ tags:
   - spark
   - big data
 image:
-  src: ""
+  src: "/assets/glider.png"
+  alt: "glider"
 ---
 
 Apache Spark is a big data framework, somewhat like Hadoop. You can use it to run queries and algorithms, over humongous amounts of data. And, you don't need to think about how you make it distributed over a large farm of servers.
