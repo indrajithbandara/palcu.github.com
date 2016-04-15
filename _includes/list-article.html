@@ -48,5 +48,5 @@
   {% endif %}
   <h3><a itemprop="name" class="post-link" href="{{ url }}"><span itemprop="headline">{{ post.title }}</span></a></h3>
 
-  <span itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: include.chars-max }}</span>
+  <span itemprop="description">{{ post.excerpt | strip_html | truncate: include.chars-max }}</span>
 </li>
