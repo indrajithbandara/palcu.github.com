@@ -44,7 +44,7 @@ I have lots of stuff on [Github](http://github.com/palcu). The order here is pur
 
 Don't know why I've written so many.
 
-* [acte-normative-scrapers](https://github.com/palcu/acte-normative-scrapers) - used for [https://github.com/aptiro/acte-normative](acte-normative)
+* [acte-normative-scrapers](https://github.com/palcu/acte-normative-scrapers) - used for [https://github.com/aptiro/acte-normative](https://github.com/aptiro/acte-normative)
 * [statistici_alegeri2014_valcea](https://github.com/palcu/statistici_alegeri2014_valcea)
 * [examstats](https://github.com/palcu/examstats) - stats about the Romanian national exams. Failed project at a hackathon.
 * [crawler-arhiva-campion](https://github.com/palcu/crawler-arhiva-campion) - http://campion.edu.ro/arhiva was one of my favorite websites
