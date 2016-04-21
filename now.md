@@ -12,6 +12,7 @@ What I am doing now:
 * startng my diploma project
 * working at data.gov.ro
 * mentoring 2 students at ROSEdu CDL
-* reading GTD and More Money Than God
+* reading GTD
+* going to several meetups
 
-_This page is updated weekly. 4/4/2016_
+_This page is updated weekly. Last update was on 21/4/2016._
