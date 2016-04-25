@@ -5,14 +5,18 @@ permalink: /now/
 no_description: true
 ---
 
-What I am doing now:
+What I am doing specifically this week:
 
-* visiting the dentist
-* going to the university for lots of boring classes
-* startng my diploma project
+* going to my final week of university
+* learning calculus
 * working at data.gov.ro
-* mentoring 2 students at ROSEdu CDL
 * reading GTD
-* going to several meetups
 
-_This page is updated weekly. Last update was on 21/4/2016._
+What interesting habits I am testing:
+
+* running
+* segmented sleeping
+* meditating using the Headspace app
+* having a vegetarian diet and logging the food using cronometer.com
+
+_This page is updated weekly. Last update was on 4/25/2016._
