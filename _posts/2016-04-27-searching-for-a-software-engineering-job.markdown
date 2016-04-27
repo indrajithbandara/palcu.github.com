@@ -3,7 +3,7 @@ title: Searching for a Software Engineering Job
 layout: post
 categories: english
 tags: career
-date: "2016-04-27 22:18:13"
+date: "2016-04-27 20:18:13"
 ---
 
 A friend of mine recently left Facebook in London. I've helped him land a new job in 21 days at Pivotal and I've learnt lots of useful things doing this. This is mainly a reference for me in the future.
