@@ -31,6 +31,7 @@ Now, we get to the interviewing part. Also, the best reads are:
 
 I've observed that after applying and maybe doing an HR talk, you will get lots of mini-projects to work on. About 50% of the companies sent him some kind of project before the technical tests. You can surprise people that are reviewing your work by:
 
+* writing beautiful structured code with good thought variable names
 * writing it in the technologies they use and mentioning you aren't proficient with that.
 * writing unit tests for your methods (or at least testing everything end-to-end).
 * having a proper README for your work where you detail your approach and the trade-offs you've made.
