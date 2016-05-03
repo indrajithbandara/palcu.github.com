@@ -5,18 +5,30 @@ permalink: /now/
 no_description: true
 ---
 
+# Now (week 18 from 2016)
+
 What I am doing specifically this week:
 
-* going to my final week of university
 * learning calculus
-* working at data.gov.ro
-* reading GTD
+* working at data.gov.ro and deploying [an important list](https://gov.palcu.ro/2016/05/03/publishing-the-list-of-creditors-of-the-romanian-government.html)
+* reading Impro
+* watching the women handball final four
+* going to a Groovy meetup
 
 What interesting habits I am testing:
 
 * running
 * segmented sleeping
 * meditating using the Headspace app
-* having a vegetarian diet and logging the food using cronometer.com
+* logging the food using cronometer.com
 
-_This page is updated weekly. Last update was on 4/25/2016._
+# Old
+
+## Week 17 from 2016
+
+What I am doing specifically this week:
+
+* going to my final week of university
+* learning calculus
+* working at data.gov.ro
+* reading GTD
