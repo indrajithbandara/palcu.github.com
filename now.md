@@ -5,7 +5,7 @@ permalink: /now/
 no_description: true
 ---
 
-# Now (week 18 from 2016)
+## Week 18 from 2016
 
 What I am doing specifically this week:
 
@@ -22,11 +22,7 @@ What interesting habits I am testing:
 * meditating using the Headspace app
 * logging the food using cronometer.com
 
-# Old
-
 ## Week 17 from 2016
-
-What I am doing specifically this week:
 
 * going to my final week of university
 * learning calculus
