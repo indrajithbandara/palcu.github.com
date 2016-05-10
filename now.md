@@ -5,6 +5,24 @@ permalink: /now/
 no_description: true
 ---
 
+## Week 19 from 2016
+
+What I am doing specifically this week:
+
+* working at data.gov.ro and deploying part two [an important list](https://gov.palcu.ro/2016/05/03/publishing-the-list-of-creditors-of-the-romanian-government.html)
+* learning calculus and crypto for my final exams
+* re-reading Zero to One
+* going to the Bucharest Agile Meetup
+* going to ROSEdu CDL and presenting about interviewing
+* preparing Vlad Temian for interviews
+
+What interesting habits I am testing:
+
+* running
+* segmented sleeping
+* meditating using the Headspace app
+* logging my food using cronometer.com
+
 ## Week 18 from 2016
 
 What I am doing specifically this week:
@@ -14,13 +32,6 @@ What I am doing specifically this week:
 * reading Impro
 * watching the women handball final four
 * going to a Groovy meetup
-
-What interesting habits I am testing:
-
-* running
-* segmented sleeping
-* meditating using the Headspace app
-* logging the food using cronometer.com
 
 ## Week 17 from 2016
 
