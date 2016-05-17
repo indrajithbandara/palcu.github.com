@@ -5,6 +5,17 @@ permalink: /now/
 no_description: true
 ---
 
+## Week 20 from 2016
+
+* working at data.gov.ro and deploying part three [an important list](https://gov.palcu.ro/2016/05/03/publishing-the-list-of-creditors-of-the-romanian-government.html)
+* learning calculus optimization techniques for my final exam
+
+What interesting habits I am testing:
+
+* running
+* meditating using the Headspace app
+* logging my food using cronometer.com
+
 ## Week 19 from 2016
 
 What I am doing specifically this week:
@@ -15,13 +26,6 @@ What I am doing specifically this week:
 * going to the Bucharest Agile Meetup
 * going to ROSEdu CDL and presenting about interviewing
 * preparing Vlad Temian for interviews
-
-What interesting habits I am testing:
-
-* running
-* segmented sleeping
-* meditating using the Headspace app
-* logging my food using cronometer.com
 
 ## Week 18 from 2016
 
