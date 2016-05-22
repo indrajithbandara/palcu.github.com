@@ -17,11 +17,11 @@ The [Softbinator meetups][2], are a bi-weekly gathering that have been held for 
 
 The [Bucharest Java][5] [User Group][6] is one of the oldest meetups around. I've been only to two of them, due to the fact that Java has not been one of my primary interests.
 
-http://www.meetup.com/Bucharest-Big-Data-Meetup/
-http://www.meetup.com/bucharestfp/
+The [Bucharest Big Data meetup](http://www.meetup.com/Bucharest-Big-Data-Meetup/) has some pretty hard core presentations. When I was at Hootsuite, we even recruited a senior engineer from that meetup.
 
-http://www.meetup.com/papers-we-love-bucharest/
-http://bucharestfp.ro
+I haven't been able to go to the [Bucharest Functional Programming](http://www.meetup.com/bucharestfp/) meetups, due to the fact that the places are limited to a max of ~20 people and they always fill them quickly. However, I think Ionut G. Stan surely knows what's he doing and their [website](http://bucharestfp.ro) has some really hard core titles.
+
+[http://www.meetup.com/papers-we-love-bucharest/](Papers We Love) is a massive success internationally, and in Bucharest it has been hosted for half an year. I was only at the first one and there seem to be a lot of people from IBM. We had some pretty interesting discussions about the Map/Reduce paper and shared lots of stories about our experience with it.
 
 http://www.meetup.com/Front-End-Bucharest/
 http://www.meetup.com/BucharestJS/
