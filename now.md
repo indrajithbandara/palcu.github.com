@@ -5,16 +5,24 @@ permalink: /now/
 no_description: true
 ---
 
-## Week 20 from 2016
+## Week 21 from 2016
 
-* working at data.gov.ro and deploying part three [an important list](https://gov.palcu.ro/2016/05/03/publishing-the-list-of-creditors-of-the-romanian-government.html)
-* learning calculus optimization techniques for my final exam
+* taking and learning for my last two exams (compilers and numerical analysis)
+* starting writing my thesis
+* going to Papers We Love and BDevops meetups
+* watching the national basketball finals
+* adding a feature to the CKAN Java library
 
 What interesting habits I am testing:
 
 * running
 * meditating using the Headspace app
 * logging my food using cronometer.com
+
+## Week 20 from 2016
+
+* working at data.gov.ro and deploying part three [an important list](https://gov.palcu.ro/2016/05/03/publishing-the-list-of-creditors-of-the-romanian-government.html)
+* learning calculus optimization techniques for my final exam
 
 ## Week 19 from 2016
 
