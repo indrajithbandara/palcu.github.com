@@ -23,10 +23,10 @@ I haven't been able to go to the [Bucharest Functional Programming](http://www.m
 
 [http://www.meetup.com/papers-we-love-bucharest/](Papers We Love) is a massive success internationally, and in Bucharest it has been hosted for half an year. I was only at the first one and there seem to be a lot of people from IBM. We had some pretty interesting discussions about the Map/Reduce paper and shared lots of stories about our experience with it.
 
-http://www.meetup.com/Front-End-Bucharest/
-http://www.meetup.com/BucharestJS/
+For web development there is the [http://www.meetup.com/BucharestJS/](BucharestJS) meetup where you learn about the hipster libraries in town. There is also a [React meetup](https://www.facebook.com/groups/1633618413528676/) organized by Hootsuite, where you'll learn about the bleeding-edge hipster libraries in town.
 
-http://www.meetup.com/ProductTank-Bucharest/
+
+After uberVU was acquired by Hootsuite, Vladimir had more free time so he decided to start a [product meetup](http://www.meetup.com/ProductTank-Bucharest/).
 http://www.meetup.com/OpenStack-Bucharest-Romania-Meetup/
 
 http://www.meetup.com/Bucharest-DevOps-Meetup/
