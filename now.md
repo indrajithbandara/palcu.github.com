@@ -5,6 +5,18 @@ permalink: /now/
 no_description: true
 ---
 
+## Habits I'm testing
+
+* running
+* meditating using the Headspace app
+* logging my food using cronometer.com
+
+## Week 24 from 2016
+
+* studying and taking my final exam (Calculus)
+* writing my Bachelor's thesis
+* watching the Euro Cup
+
 ## Week 21 from 2016
 
 * taking and learning for my last two exams (compilers and numerical analysis)
@@ -12,12 +24,6 @@ no_description: true
 * going to Papers We Love and BDevops meetups
 * watching the national basketball finals
 * adding a feature to the CKAN Java library
-
-What interesting habits I am testing:
-
-* running
-* meditating using the Headspace app
-* logging my food using cronometer.com
 
 ## Week 20 from 2016
 
