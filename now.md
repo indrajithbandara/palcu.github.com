@@ -13,6 +13,12 @@ no_description: true
 
 ## Week 24 from 2016
 
+* finishing my Bachelor's thesis
+* watching the Euro Cup
+* working at data.gov.ro
+
+## Week 23 from 2016
+
 * studying and taking my final exam (Calculus)
 * writing my Bachelor's thesis
 * watching the Euro Cup
