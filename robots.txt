@@ -1,8 +1,8 @@
 User-Agent: *
 Sitemap: https://blog.palcu.ro/sitemap.xml
-Disallow: /blog/
-Disallow: /romanian/
-Disallow: /best/
-Disallow: /english/
+Disallow: /blog
+Disallow: /romanian
+Disallow: /best
+Disallow: /english
 Disallow: /grid/
 Disallow: /mozaic/
