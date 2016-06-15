@@ -26,9 +26,9 @@ The [Softbinator meetups][2] is a bi-weekly gathering that has been held for ove
 
 ## Specific ones
 
-The [Bucharest Java][5] [User Group][6] is one of the oldest meetups around. I've been only to two of them, due to the fact that Java has not been one of my primary interests.
+The [Bucharest Java][5] [User Group][6] is one of the oldest meetups around. I've been only to two of them, due to the fact that Java has not been one of my primary interests. However, they've had some nice topics for newbiess like me in the last months.
 
-The [Bucharest Big Data meetup](http://www.meetup.com/Bucharest-Big-Data-Meetup/) has some pretty hardcore presentations. When I was at Hootsuite, we even recruited a senior engineer from that place.
+The [Bucharest Big Data meetup](http://www.meetup.com/Bucharest-Big-Data-Meetup/) has some pretty hardcore presentations. When I was at Hootsuite, we even recruited a senior engineer from that place. If you like to get into fights about Cassandra, Hadoop or MongoDB, this is the place where you will find somebody eager to defend one of those technologies.
 
 [Papers We Love](http://www.meetup.com/papers-we-love-bucharest/) is a massive success internationally and in Bucharest, it has been hosted for half a year. I was only at the first one and there seem to be a lot of people from IBM. We had some pretty interesting discussions about the Map/Reduce paper and shared lots of stories about our experience with it.
 
