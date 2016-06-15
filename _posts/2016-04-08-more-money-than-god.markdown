@@ -14,7 +14,7 @@ image:
 
 Cartea "More Money Than God: Hedge Funds and the Making of a New Elite" scrisă de Sebastian Mallaby se afla de oleacă timp în lista mea de așteptare pe Goodreads. Dar cum mi s-a deschis apetitul pentru cărți financiare de la "Too Big to Fail" unde am aflat despre băncile de investiții, am zis să continui în seria asta și să aflu mai multe despre hedge funds, sau _fondurile de risc_ așa cum e traducerea românească.
 
-<img src="/assets/More_money_than_god_book_cover.jpg" alt="more money than god book cover" style="float:right" />
+<img class="img-inline" src="/assets/More_money_than_god_book_cover.jpg" alt="more money than god book cover" style="float:right" />
 
 Autorul prezintă într-un mod cronologic investitorii cei mai importanți și tehnicile pe care fiecare dintre ei le-a inventat. Chiar dacă are o înclinație în a susține puțin prea mult fondurile de risc, argumentele aduse de Sebastian în favoarea fondurilor sunt convingătoare și au logică.
 

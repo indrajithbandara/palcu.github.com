@@ -2,13 +2,27 @@
  * Posts
  */
 .post {
-  img {
+  table.image {
+    text-align: center;
+    margin: 10px auto;
+
+    caption {
+        font-style: italic;
+        font-size: 80%;
+    }
+  }
+
+  .img-inline {
     padding: 20px 40px;
   }
 
   .tr-caption-container {
     padding-bottom: 10px;
     font-style: italic;
+  }
+
+  .center {
+    text-align: center;
   }
 }
 
