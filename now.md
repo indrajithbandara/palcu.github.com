@@ -7,9 +7,15 @@ no_description: true
 
 ## Habits I'm testing
 
-* running
 * meditating using the Headspace app
 * logging my food using cronometer.com
+
+## Week 25 from 2016
+
+* taking my final Bachelor exam
+* watching the Euro Cup
+* going to the Queen concert
+* celebrating my bday
 
 ## Week 24 from 2016
 
