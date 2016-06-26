@@ -10,6 +10,13 @@ no_description: true
 * meditating using the Headspace app
 * logging my food using cronometer.com
 
+## Week 26 from 2016
+
+* presenting my Bachelor thesis
+* last week at data.gov.ro
+* watching the Euro Cup
+* preparing my move in London
+
 ## Week 25 from 2016
 
 * taking my final Bachelor exam
