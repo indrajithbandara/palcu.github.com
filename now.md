@@ -8,7 +8,14 @@ no_description: true
 ## Habits I'm testing
 
 * meditating using the Headspace app
-* logging my food using cronometer.com
+
+## Week 29 from 2016
+
+* going to London meetups
+* reading books
+* getting comfortable with London
+* doing British bureaucracy
+* flying to San Francisco
 
 ## Week 26 from 2016
 
