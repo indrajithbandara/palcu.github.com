@@ -17,3 +17,5 @@ This tries to be a list of all the concerts I've been, together with some inform
 * Scorpions, Bucharest, Romexpo, December 2013
 * AC/DC, Bucharest, Piata Constitutiei, May 2010
 * Rolling Stones, Bucharest, Lia Manoliu, July 2007
+
+_Work in progress..._
