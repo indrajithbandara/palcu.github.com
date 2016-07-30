@@ -8,6 +8,13 @@ no_description: true
 ## Habits I'm testing
 
 * meditating using the Headspace app
+* running
+
+## Week 31 from 2016
+
+* enjoying sunny Palo Alto
+* second week of onboarding
+* travelling back to London
 
 ## Week 29 from 2016
 
