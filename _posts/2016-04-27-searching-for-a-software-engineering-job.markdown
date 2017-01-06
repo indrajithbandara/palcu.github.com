@@ -8,7 +8,7 @@ date: "2016-04-27 20:18:13"
 
 A friend of mine recently left Facebook in London. I've helped him land a new job in 21 days at Pivotal and I've learnt lots of useful things doing this. This is mainly a reference for me in the future.
 
-He learnt about the decision one week before him contract ended. The first thing we did was to go over him resume and update it. I recommended him the resume checklist from [The Breakout List][0] website, paying close attention to each item.
+He learnt about the decision one week before his contract ended. The first thing we did was to go over his resume and update it. I recommended him the resume checklist from [The Breakout List][0] website, paying close attention to each item.
 
 Afterwards came updating the LinkedIn profile. Don't be ashamed of setting that you have ended work at a company. I think recruiters have a special filter for this because the number of messages became higher after he changed that.
 
