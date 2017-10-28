@@ -31,6 +31,6 @@ permalink: "/:year/:month/:title.html"
 sass:
   style: compressed
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-sitemap
