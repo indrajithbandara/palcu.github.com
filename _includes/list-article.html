@@ -4,8 +4,6 @@
     <meta content="{{ site.my_face | prepend: site.url }}" itemprop="image" />
   </div>
 
-  <span class="post-meta" itemprop="datePublished">{{ post.date | date: "%A, %-d %B %Y" }}</span>
-
   {% if post.custom_url %}
     {% assign url = post.custom_url %}
   {% else %}
@@ -18,6 +16,9 @@
     </span>
   </h3>
 
+  <p>
+    <span class="post-meta" itemprop="datePublished">{{ post.date | date: "%A, %-d %B %Y" }}</span>
+  </p>
 
   {% if include.type != "full" %}
     {% assign content = post.excerpt | strip_html | truncate: 300 %}

@@ -142,11 +142,12 @@
 }
 
 .post-list {
+    margin-top: $spacing-unit / 2;
     margin-left: 0;
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit;
+        margin-bottom: $spacing-unit / 2;
         clear: both;
 
         code {
@@ -204,7 +205,7 @@
         font-style: italic;
         line-height: 38.4px;
         margin: 0;
-        margin-bottom: 10px;
+        margin-bottom: $spacing-unit / 2;
 
         @include media-query($on-palm) {
             float: none;
@@ -214,7 +215,7 @@
 
     hr {
         margin-bottom: $spacing-unit / 2;
-        margin-top: -5px;
+        margin-top: $spacing-unit / 2;
         border-style: solid;
         border-color: $grey-color-dark;
         border-width: inherit;
