@@ -1,7 +1,7 @@
 ---
 title: Bucharest's Tech Meetup Scene
 layout: post
-categories: english
+categories: english normal
 tags: bucharest meetups
 date: "2016-06-15 23:44:12"
 ---

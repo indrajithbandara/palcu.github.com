@@ -1,4 +1,4 @@
-git add .
-git commit -am 'Add new article'
-git push
-open "http://blog.palcu.ro"
+rvm use ruby-2.4.1
+rvm gemset use palcu.github.com
+bundle exec jekyll build
+firebase deploy

@@ -1,7 +1,7 @@
 ---
 title: Searching for a Software Engineering Job
 layout: post
-categories: english
+categories: english normal
 tags: career
 date: "2016-04-27 20:18:13"
 ---

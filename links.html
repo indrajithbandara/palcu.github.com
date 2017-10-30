@@ -1,0 +1,13 @@
+---
+layout: page
+sitemap: false
+---
+
+<div class="home">
+  <h1>All links:</h1>
+  <ul class="post-list">
+    {% for post in site.categories.link %}
+      {% include list-article.html type="full" %}
+    {% endfor %}
+  </ul>
+</div>

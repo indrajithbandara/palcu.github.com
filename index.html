@@ -3,18 +3,30 @@ layout: default
 ---
 
 <div class="home" itemscope itemtype="http://schema.org/BlogPosts">
-  <h2 class="inline">✉️ Last Articles</h2>
+  <h2 class="inline">🔗 Last Links</h2>
   <p class="url">
-    <a href="/all">view all</a> / <a href="/romanian">🇷🇴 Romanian</a> / <a href="/english">🇬🇧 English</a>
+    <a href="/links">view all links</a>
   </p>
   <ul class="post-list">
-    {% for post in site.posts limit: 3 %}
-      {% unless post.categories contains 'best' %}
-        {% include list-article.html chars-max=300 %}
-      {% endunless %}
+    {% for post in site.categories.link limit: 3 %}
+      {% include list-article.html type="full" %}
     {% endfor %}
   </ul>
+
   <hr />
+
+  <h2 class="inline">✉️ Last Articles</h2>
+  <p class="url">
+    <a href="/all">view all articles</a> / <a href="/romanian">🇷🇴 Romanian</a> / <a href="/english">🇬🇧 English</a>
+  </p>
+  <ul class="post-list">
+    {% for post in site.categories.normal limit: 3 %}
+      {% include list-article.html %}
+    {% endfor %}
+  </ul>
+
+  <hr />
+
   <h2 class="inline">⭐ Last Best Articles</h2>
   <p class="url">
     <a href="/best">view all best articles</a>
@@ -22,7 +34,7 @@ layout: default
 
   <ul class="post-list">
     {% for post in site.categories.best limit: 3 %}
-      {% include list-article.html chars-max=300 %}
+      {% include list-article.html %}
     {% endfor %}
   </ul>
 </div>

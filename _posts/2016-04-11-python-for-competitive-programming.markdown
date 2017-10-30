@@ -6,6 +6,7 @@ tags:
   - python
   - competitive programming
   - infoclock
+categories: english, normal
 ---
 
 [InfoClock](https://www.facebook.com/groups/271299146330636/) is the nickname of the Advanced Algorithms course at the Faculty of Computer Science and Mathematics in Bucharest. Usually, for competitive programming contests like Codeforces, students prefer C++. Being the only allowed language in high-school competitions, students have got used to it. Today, I taught a class on how you could use Python in a contest, showing them:

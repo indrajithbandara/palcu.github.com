@@ -96,13 +96,13 @@
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(30% - (#{$spacing-unit} / 2));
+    width:         calc(30% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+    width:         calc(25% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
@@ -183,6 +183,10 @@
     color: $grey-color;
 }
 
+.list-article a {
+    display: inline-block;
+}
+
 .post-link {
     display: block;
     font-size: 24px;
@@ -220,7 +224,6 @@
 .page-content .post, .page-content .home {
     border-bottom: 1px solid $grey-color-dark;
 }
-
 
 
 /**
