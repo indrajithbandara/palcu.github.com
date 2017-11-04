@@ -6,6 +6,19 @@
       "**/.*",
       "**/node_modules/**"
     ],
+    "redirects": [{
+      "source" : "/all.html",
+      "destination" : "all"
+    }, {
+      "source" : "/english.html",
+      "destination" : "english"
+    }, {
+      "source" : "/romanian.html",
+      "destination" : "romanian"
+    }, {
+      "source" : "/best.html",
+      "destination" : "best"
+    }],
     "headers": [ {
       "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
       "headers" : [ {
