@@ -6,18 +6,21 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "redirects": [{
-      "source" : "/all.html",
-      "destination" : "all"
+    "rewrites": [{
+      "source" : "/all",
+      "destination" : "/all.html"
     }, {
-      "source" : "/english.html",
-      "destination" : "english"
+      "source" : "/english",
+      "destination" : "/english.html"
     }, {
-      "source" : "/romanian.html",
-      "destination" : "romanian"
+      "source" : "/romanian",
+      "destination" : "/romanian.html"
     }, {
-      "source" : "/best.html",
-      "destination" : "best"
+      "source" : "/best",
+      "destination" : "/best.html"
+    }, {
+      "source" : "/links",
+      "destination" : "/links.html"
     }],
     "headers": [ {
       "source" : "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
