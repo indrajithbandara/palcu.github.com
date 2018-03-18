@@ -2,7 +2,7 @@
 title: "Rising Waters Threaten China’s Rising Cities"
 layout: post
 categories: english, link
-tags: "climate change"
+tags: climate-change
 custom_url: https://www.nytimes.com/interactive/2017/04/07/world/asia/climate-change-china.html
 date: "2017-11-22 21:37:12"
 ---

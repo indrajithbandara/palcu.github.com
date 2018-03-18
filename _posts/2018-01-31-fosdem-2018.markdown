@@ -1,0 +1,80 @@
+---
+title: FOSDEM 2018
+layout: post
+categories: english, normal
+tags: open-source fosdem
+date: "2018-02-01 21:44:12"
+---
+
+Hurray, I'm finally going to Brussels for the Fosdem conference 🎉🚁. I will be
+_not so live_ blogging when I'm not drinking Belgian beer or eating fries with 5
+types of sauce. I've prepared myself by reading through the [n-gate.com][0]
+schedule, laughing at [engineers][1] who want laugh because Golang does not
+support generics.
+
+[0]: http://n-gate.com/fosdem/2018/01/28/0/
+[1]: https://www.reddit.com/r/programmingcirclejerk/comments/7ttdti/fosdem_is_around_the_corner_time_for_everyones/dtf92e3/?st=jd3oiu8g&sh=b1c0f52b
+
+# Day 0
+
+Beer is a way of life in Belgium and Belgians take pride of it. The [Friday][2]
+evening page has the details about what happens the night before the
+conference.
+
+[2]: https://archive.fosdem.org/2017/beerevent/
+
+# Day 1
+
+I'll be listing the names of presentations I enjoyed together with some
+opinions. If you want to watch them, they'll be available several days later on
+the Fosdem [website][3].
+
+[3]: https://video.fosdem.org
+
+## Performance Analysis and Troubleshooting Methodologies for Databases
+
+The CEO of Percona did this talk. He carefully chose the humor to appeal to
+both developers and systems engineers.
+
+> if databases go wrong, then handwave and call a DBA
+
+He did a broad description of different monitoring approaches in the context of
+databases, but you'd have to search for yourself for concrete recipes. Oh, and
+he used the term SLO correctly 🤗.
+
+## Creating GopherJS Apps with gRPC-Web
+
+People are getting excited about Golang, possibly overly excited. A developer
+decided that they hated Javascript a lot, that a suitable alternative is
+transpiling Go to it. But why stop there, when you could have the backend and
+frontend speak to each other in protobufs using GRPC. Go nuts with everything
+in Golang!
+
+## Building and testing a distributed data store in Go
+
+An engineer has to do a distributed database for this master's thesis. What
+follows is a presentation of the concrete steps and mindset you need for doing
+this. The talk is heavy with references and insightful.
+
+# Day 2
+
+## Re-structuring a giant, ancient code-base for new platforms
+
+LibreOffice is a massive sleeping giant. But people are working on it and the
+presenter came with some interesting war stories. There's a beautiful slide with
+a timeline of the number of German comments in the codebase that started from a
+something big and over the time went to zero.
+
+## Security Theatre
+
+Good review of the security events that happened in the past months. Ends with
+some questions that we should all ask ourselves more often.
+
+## Exploiting modern microarchitectures Meltdown, Spectre, and other hardware attacks
+
+Beautiful rundown of the recent events that happened in the world of
+microprocessors.
+
+# Day 3
+
+Brugges is small and nice.

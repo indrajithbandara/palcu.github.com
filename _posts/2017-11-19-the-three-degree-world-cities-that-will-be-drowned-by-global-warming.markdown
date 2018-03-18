@@ -2,7 +2,7 @@
 title: "The three-degree world: cities that will be drowned by global warming"
 layout: post
 categories: english, link
-tags: "climate change"
+tags: climate-change
 custom_url: https://www.theguardian.com/cities/ng-interactive/2017/nov/03/three-degree-world-cities-drowned-global-warming
 date: "2017-11-19 21:29:30"
 ---
